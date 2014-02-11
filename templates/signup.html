@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Unit Rot 13</title>
+    </head>
+
+    <body>
+        <form method="post">
+	    	<b style="font-size: 25px">Sign up</b>
+	    	<br><br>
+	    	<label>
+	        	Username
+	        	<input type="text" name="username" value="{{username}}">
+	        	<font style="color:red">{{error_username}}</font>
+	    	</label>
+	    	<br>
+	    	<label>
+	        	Password
+	        	<input type="password" name="password" value ="">
+	        	<font style="color:red">{{error_password}}</font>
+	    	</label>
+	    	<br>
+	    	<label>
+	        	Verify Password
+	        	<input type="password" name="verify" value ="">
+	        	<font style="color:red">{{error_verify}}</font>
+	    	</label>
+	    	<br>
+	    	<label>
+	    		Email (optional)
+	    		<input type="text" name="email" value="{{email}}">
+	    		<font style="color:red">{{error_email}}</font>
+	    	</label>
+	    	<br>
+	    	<input type="submit">
+		</form>
+    </body>
+</html>
